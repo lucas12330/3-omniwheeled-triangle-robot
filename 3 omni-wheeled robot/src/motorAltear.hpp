@@ -8,7 +8,7 @@ void motor(int num, int speed){
     AF_DCMotor m1(num);
     if (speed > 255 || speed < -255){
         speed = 255;
-    } else if (speed = 0){
+    } else if (speed == 0){
         m1.run(RELEASE);
     } else {
         if (speed < 0){
